@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-
+		<link rel="stylesheet" href="css/custom.css">
 		<link rel="stylesheet" href="css/styles.css" type="text/css" />
 	</head>
 	<body>
@@ -11,8 +11,9 @@
 			<div id="dashboard">
 				<div id="profile-summary">
 					<div class="content">
-						<img class='avatar' src='img/alagoon.jpg' />
-						<p>Your Name Here</p>
+						<img id="myAvatar" class='avatar' src='img/alagoon.jpg' />
+						<p id="UN">Mr.Gaud</p>
+						<p id="close-button">X</p>
 					</div>
 				</div>
 				<div id="tweet-content">
@@ -44,7 +45,7 @@
 					<div class="tweet">
 						<div class="content">
 							<img class="avatar" src="img/damenleeturks.jpg" />
-							<strong class="fullname">My BFF</strong>
+							<strong class="fullname">Mr.Anderson</strong>
 							<span class="username">@mybff</span>
 
 							<!-- BLACK DIAMOND: Implement the icons for when a tweet is favorited/retweeted in the upper right of the tweet. -->
@@ -55,8 +56,8 @@
 							<!-- HINT: CSS ":hover" pseudo element -->
 							<div class="tweet-actions">
 								<ul>
-									<li><span class="icon action-reply"></span> Reply</li>
-									<li><span class="icon action-retweet"></span> Retweet</li>
+									<li class='magic'><span class="icon action-reply"></span> Reply</li>
+									<li class='magic'>Retweet</li>
 									<li><span class="icon action-favorite"></span> Favorite</li>
 									<li><span class="icon action-more"></span> More</li>
 								</ul>
@@ -105,7 +106,7 @@
 							<div class="tweet-actions">
 								<ul>
 									<li><span class="icon action-reply"></span> Reply</li>
-									<li><span class="icon action-retweet"></span> Retweet</li>
+									<li class='magic'><span class="icon action-retweet"></span> Retweet</li>
 									<li><span class="icon action-favorite"></span> Favorite</li>
 									<li><span class="icon action-more"></span> More</li>
 								</ul>
@@ -145,7 +146,7 @@
 							<div class="tweet-actions">
 								<ul>
 									<li><span class="icon action-reply"></span> Reply</li>
-									<li><span class="icon action-retweet"></span> Retweet</li>
+									<li class='magic'><span class="icon action-retweet"></span>Retweet</li>
 									<li><span class="icon action-favorite"></span> Favorite</li>
 									<li><span class="icon action-more"></span> More</li>
 								</ul>
@@ -178,5 +179,11 @@
 				</div><!-- #stream -->
 			</div><!-- #main -->
 		</div><!-- #page-container -->
+		<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+	<script src='js/time.js'></script>
+	<script src="js/script.js"></script>
 	</body>
 </html>

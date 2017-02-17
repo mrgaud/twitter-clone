@@ -1,0 +1,15 @@
+#UN{
+  display: inline-block;
+}
+#close-button{
+  display: none;
+  float: right;
+  cursor: default;
+  color: #97A2A7;
+}
+li:hover{
+  color: grey;
+}
+.icon{
+  display: none;
+}
